@@ -234,3 +234,12 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType vim setlocal shiftwidth=2 tabstop=2
 
 set tags=./tags;/
+
+" Black background                                                                                                                                                                                                                                                              
+hi Normal ctermbg=black                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                
+if &term =~ '256color'                                                                                                                                                                                                                                                          
+    " Disable Background Color Erase (BCE) so that color schemes                                                                                                                                                                                                                
+    " work properly when Vim is used inside tmux and GNU screen.                                                                                                                                                                                                                
+    set t_ut=                                                                                                                                                                                                                                                                   
+endif  
