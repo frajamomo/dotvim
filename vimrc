@@ -7,6 +7,7 @@
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
@@ -235,11 +236,12 @@ autocmd FileType vim setlocal shiftwidth=2 tabstop=2
 
 set tags=./tags;/
 
-" Black background                                                                                                                                                                                                                                                              
-hi Normal ctermbg=black                                                                                                                                                                                                                                                         
-                                                                                                                                                                                                                                                                                
-if &term =~ '256color'                                                                                                                                                                                                                                                          
-    " Disable Background Color Erase (BCE) so that color schemes                                                                                                                                                                                                                
-    " work properly when Vim is used inside tmux and GNU screen.                                                                                                                                                                                                                
-    set t_ut=                                                                                                                                                                                                                                                                   
-endif  
+" Black background
+hi Normal ctermbg=16 guibg=#000000
+hi LineNr ctermbg=16 guibg=#000000
+
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
