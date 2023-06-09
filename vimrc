@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'ctrlp.vim'
 Plugin 'indentpython.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 
 " The following are examples of different formats supported.
@@ -163,3 +165,4 @@ autocmd FileType vim setlocal shiftwidth=2 tabstop=2
 " Black background
 hi Normal ctermbg=16 guibg=#000000
 hi LineNr ctermbg=16 guibg=#000000
+let g:airline_powerline_fonts = 1
