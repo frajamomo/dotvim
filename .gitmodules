@@ -1,6 +1,6 @@
 [submodule "bundle/Vundle"]
 	path = bundle/Vundle.vim
-	url = git@github.com:vim-scripts/vundle.git
+	url = git@github.com:VundleVim/Vundle.vim.git
 [submodule "bundle/ctrlp"]
   path = bundle/ctrlp.vim
   url = git@github.com:kien/ctrlp.vim.git
